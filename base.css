@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -12,38 +12,54 @@
   font-size: 16px;
 
   /* Primary */
+  --light-blue: #ecf2f8;
 
   /* Neutral */
+  --dark-gray: #48556a;
+  --gray: #6e8098;
+  --light-gray: #9daec2;
+  --white: #ecf2f8;
 
   /* Typography */
-  --h1: 1.75rem;
+  --h1: 1.25rem;
+  --h1-line-height: 28px;
+  --h1-letter-spacing: 0.25px;
 
-  --body: 1rem;
-  --body-line-height: 26px;
+  --body: 0.8125rem;
+  --body-line-height: 20px;
+  --body-letter-spacing: 0.12px;
+  --body-mono-letter-spacing: 5px;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--light-blue);
   min-height: 100vh;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
   font-size: var(--h1);
-  font-weight: 900;
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+  font-weight: 700;
 }
 
 .body-text {
   font-size: var(--body);
   line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
 }
+
+.body-text-mono {
+  letter-spacing: var(--body-mono-letter-spacing);
+}
+
 @media (max-width: 375px) {
   :root {
-    --h1: 22px;
-
-    --body: 0.938rem;
-    --body-line-height: 25px;
+    --h1: 1rem;
+    --h1-line-height: 24px;
+    --h1-letter-spacing: 0.2px;
   }
 }
