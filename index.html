@@ -42,14 +42,31 @@
                 <time class="body-text card-profile-date-published" datetime="2020-06-28">28 Jun 2020</time>
               </div>
             </div>
-            <button class="share-btn" aria-label="Open the share menu">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="share-btn-icon" aria-hidden>
-                <path
-                  fill="#6E8098"
-                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
-                />
-              </svg>
-            </button>
+            <div class="share-btn-container">
+              <div class="tooltip-container tooltip-hidden" id="share-tooltip">
+                <div class="tooltip-content">
+                  <p class="body-text body-text-mono tooltip-text">Share</p>
+                  <a href="./index.html" class="tooltip-social-link">
+                    <img src="./assets/icon-facebook.svg" />
+                  </a>
+                  <a href="./index.html" class="tooltip-social-link">
+                    <img src="./assets/icon-twitter.svg" />
+                  </a>
+                  <a href="./index.html" class="tooltip-social-link">
+                    <img src="./assets/icon-pinterest.svg" />
+                  </a>
+                </div>
+                <div class="tooltip-triangle"></div>
+              </div>
+              <button class="share-btn" aria-label="Open the share menu" onclick="toggleTooltip()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="share-btn-icon" aria-hidden>
+                  <path
+                    fill="#6E8098"
+                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                  />
+                </svg>
+              </button>
+            </div>
           </footer>
         </section>
       </article>
