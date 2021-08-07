@@ -74,15 +74,19 @@
 }
 
 .share-btn:hover,
-.share-btn:hover .share-btn-icon {
+.share-btn:focus .share-btn:hover .share-btn-icon,
+.share-btn:focus .share-btn-icon {
   transition: all 0.2s ease-in-out;
 }
 
-.share-btn:hover {
+.share-btn:hover,
+.share-btn:focus {
+  outline: none;
   background-color: var(--gray);
 }
 
-.share-btn:hover .share-btn-icon path {
+.share-btn:hover .share-btn-icon path,
+.share-btn:focus .share-btn-icon path {
   fill: #fff;
 }
 
