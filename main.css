@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+  border-radius: 10px;
+  max-width: 730px;
+  width: 100%;
+}
+
+.card-img {
+  object-fit: cover;
+  max-width: 285px;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 32px 40px;
+}
+
+.card-title {
+  color: var(--dark-gray);
+}
+
+.card-description {
+  color: var(--gray);
+  margin: 12px 0 20px 0;
+  font-weight: 500;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-profile-img {
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.card-profile-author,
+.card-profile-date-published {
+  line-height: normal;
+}
+
+.card-profile-author {
+  display: block;
+  color: var(--dark-gray);
+  font-weight: 700;
+}
+
+.card-profile-date-published {
+  color: var(--light-gray);
+}
+
+.share-btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.share-btn:hover,
+.share-btn:hover .share-btn-icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.share-btn:hover {
+  background-color: var(--gray);
+}
+
+.share-btn:hover .share-btn-icon path {
+  fill: #fff;
+}
+
+.share-btn-icon {
+  max-width: 15px;
+  width: 100%;
+}
