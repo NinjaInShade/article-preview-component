@@ -6,6 +6,7 @@
     <meta name="description" content="Article preview component" />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="tooltip.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
@@ -58,7 +59,7 @@
                 </div>
                 <div class="tooltip-triangle"></div>
               </div>
-              <button class="share-btn" aria-label="Open the share menu" onclick="toggleTooltip()">
+              <button class="share-btn" aria-label="Toggle the share menu" onclick="toggleTooltip()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="share-btn-icon" aria-hidden>
                   <path
                     fill="#6E8098"
@@ -68,6 +69,31 @@
               </button>
             </div>
           </footer>
+          <div class="tooltip-container tooltip-hidden" id="share-tooltip-mobile">
+            <div class="tooltip-content">
+              <div class="tooltip-flex">
+                <p class="body-text body-text-mono tooltip-text">Share</p>
+                <a href="./index.html" class="tooltip-social-link">
+                  <img src="./assets/icon-facebook.svg" />
+                </a>
+                <a href="./index.html" class="tooltip-social-link">
+                  <img src="./assets/icon-twitter.svg" />
+                </a>
+                <a href="./index.html" class="tooltip-social-link">
+                  <img src="./assets/icon-pinterest.svg" />
+                </a>
+              </div>
+              <button class="share-btn" aria-label="Toggle the share menu" onclick="toggleTooltip()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="share-btn-icon" aria-hidden>
+                  <path
+                    fill="#6E8098"
+                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="tooltip-triangle"></div>
+          </div>
         </section>
       </article>
     </main>

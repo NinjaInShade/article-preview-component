@@ -16,6 +16,7 @@
 }
 
 .card-content {
+  position: relative;
   background-color: #fff;
   border-radius: 0 10px 10px 0;
   padding: 32px 40px;
@@ -27,7 +28,7 @@
 
 .card-description {
   color: var(--gray);
-  margin: 12px 0 20px 0;
+  margin: 12px 0 25px 0;
   font-weight: 500;
 }
 
@@ -98,61 +99,6 @@
 .share-btn-icon {
   max-width: 15px;
   width: 100%;
-}
-
-.tooltip-hidden {
-  display: none;
-}
-
-.tooltip-container {
-  position: absolute;
-  animation: fadeIn 0.5s;
-  transform: translateX(-50%);
-  bottom: 45px;
-  left: 50%;
-}
-
-.tooltip-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--dark-gray);
-  box-shadow: 0 10px 10px 0 rgba(201, 213, 225, 0.5);
-  padding: 18px 36px;
-  border-radius: 10px;
-}
-
-.tooltip-triangle {
-  border-color: #48556a transparent transparent transparent;
-  border-style: solid;
-  margin: 0 auto;
-  border-width: 12px 12px 0 12px;
-  height: 0;
-  width: 0;
-}
-
-.tooltip-text {
-  text-transform: uppercase;
-  color: var(--light-gray);
-  margin-right: 21px;
-}
-
-.tooltip-social-link {
-  height: 20px;
-}
-
-.tooltip-social-link:not(:last-child) {
-  margin-right: 16px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 650px) {
