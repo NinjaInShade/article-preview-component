@@ -106,8 +106,14 @@
     flex-direction: column;
   }
 
+  .card-content {
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+  }
+
   .card-img {
     max-width: none;
+    border-radius: 10px 10px 0 0;
   }
 }
 
