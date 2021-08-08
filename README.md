@@ -24,13 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshots/Desktop_solution.png) -->
-<!-- ![](./screenshots/Mobile_solution.png) -->
+![](./screenshots/Desktop_solution.png)
+![](./screenshots/Desktop_active_solution.png)
+![](./screenshots/Mobile_solution.png)
+![](./screenshots/Mobile_active_solution.png)
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-order-summary-card-TFXa8ZDRV) -->
-<!-- - Live Site URL: (https://lm-order-summary-component.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/interactive-article-preview-card-with-tooltip-FB88lPu5p)
+- Live Site URL: (https://lm-article-preview-component.netlify.app/)
 
 ## My process
 
@@ -42,7 +44,9 @@ Users should be able to:
 
 ### What I learned
 
-Not done yet.
+I learned how to make a tooltip. The Javascript was pretty easy however the styling tripped me up a little bit, as I had to duplicate the tooltip so one was relative to the button, and one relative to the overall card. A slight bit had me confused as I had to make sure the tooltip on mobile didnt open up the desktop too, and vice versa, since they both shared the same styling.
+
+In the end I had to use !important on the .tooltip-hidden utility class, which I tried to avoid as much as possible, but couldn't in the end.
 
 ## Author
 
